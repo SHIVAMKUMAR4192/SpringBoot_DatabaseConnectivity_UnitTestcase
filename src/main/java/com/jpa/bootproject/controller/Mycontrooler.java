@@ -23,6 +23,7 @@ public class Mycontrooler {
     }
 
 
+
     @PutMapping(value = "/updateUser/{userId}")
     public User updateUser(@PathVariable("userId") int userId, @RequestBody User user) {
         User shivam = userRepository.findByUserId(userId);
